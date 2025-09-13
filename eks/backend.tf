@@ -7,11 +7,11 @@ terraform {
     }
   }
   backend "s3" {
-    bucket         = "dev-kunal-tf-bucket"
-    region         = "us-east-1"
-    key            = "eks/terraform.tfstate"
-    use_lockfile   = true
-    encrypt        = true
+    bucket       = "dev-kunal-tf-bucket"
+    region       = "us-east-1"
+    key          = "eks/terraform.tfstate"
+    use_lockfile = true
+    encrypt      = true
   }
 }
 
